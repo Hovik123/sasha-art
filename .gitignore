@@ -4,3 +4,7 @@
 Homestead.yaml
 Homestead.json
 .env
+/public/admin/dist/
+/public/admin/node_modules/
+/public/admin/bower_components/
+/public/admin/index.html
