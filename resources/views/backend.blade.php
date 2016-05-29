@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/administrator/dist/assets/css/all.css">
+
+</head>
+<body ng-app="Art" ng-controller="DashboardController">
+
+<div ui-view></div>
+<script type="text/javascript" src="/administrator/dist/assets/js/all.min.js"></script>
+<script type="text/javascript" src="/administrator/dist/app.js"></script>
+<script type="text/javascript" src="/administrator/dist/bootstrap/routes.js"></script>
+</body>
+</html>

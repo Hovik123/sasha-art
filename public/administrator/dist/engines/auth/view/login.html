@@ -1,0 +1,23 @@
+<div class="login-background">
+    <div class="row login">
+        <form class="col push-s4 s4 ">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate" ng-model="user.email">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="password" type="password" class="validate" ng-model="user.password">
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <a class="waves-effect waves-light btn" data-ng-click="login(user)">Login</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

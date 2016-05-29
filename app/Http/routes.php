@@ -10,9 +10,23 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
+Route::group(["prefix"=>'admin'],function(){
+    Route::get('/', 'HomeController@index');
+});
+Route::group(["prefix"=>'dashboard'],function(){
+    Route::get('/', 'HomeController@dashboard');
 });
 
 
+
+
+//Route::auth();
+
+/*Route::get('/home', 'HomeController@index');*/
+Route::post('/login', 'HomeController@doLogin');
+Route::post('/get-token', 'HomeController@camperToken');
+
+
+Route::group(["middleware"=>'auth'],function(){
+    Route::get('/logout', 'HomeController@doLogOut');
+});
